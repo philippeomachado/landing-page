@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH Machado Vídeo Pack – Assinatura de Vídeos</title>
+
+<!-- ======  CORES & TIPOGRAFIA ====== -->
+<!-- ======  CORES & TIPOGRAFIA  ====== -->
+<style>
+:root{
+  --primary:        #018781;   /* verde-petróleo */
+  --primary-light:  #02a297;   /* tom mais claro p/ hover   */
+  --highlight:      #e03627;   /* laranja-vermelho           */
+  --secondary:      #e99127;   /* dourado queimado (preços)  */
+  --bg:             #f5f7fa;   /* neutro claro               */
+  --text:           #212121;   /* quase-preto                */
+  --radius:         8px;
+  --font:           "Inter", Arial, Helvetica, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-weight:700;margin-bottom:.5em;color:var(--primary)}
+section{padding:72px 24px;max-width:1200px;margin:auto}
+
+/* Botões */
+.btn{display:inline-block;padding:12px 28px;border-radius:var(--radius);font-weight:600}
+.btn-primary{background:var(--primary);color:#fff;transition:.2s}
+.btn-primary:hover{background:var(--primary-light)}
+
+/* Header */
+header{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.07);position:sticky;top:0;z-index:99}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:auto;padding:12px 24px}
+nav ul{display:flex;gap:24px;list-style:none;font-weight:600}
+nav li a:hover{color:var(--highlight)}
+
+/* Hero */
+#hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+#hero .text{flex:1 1 360px}
+#hero h1{font-size:clamp(2rem,5vw,3rem)}
+#hero p{font-size:1.125rem;margin-bottom:32px}
+#hero .illustration{flex:1 1 320px;height:320px;background:url('https://picsum.photos/seed/video/640/640') center/cover;border-radius:var(--radius)}
+
+/* Vantagens */
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:48px}
+.card{background:#fff;padding:32px;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.card h3{margin-bottom:12px;font-size:1.125rem}
+
+/* Tabela Escopo */
+#escopo .table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{padding:12px 16px;border:1px solid #e0e0e0}
+th{background:var(--primary);color:#fff;text-align:left}
+tbody tr:nth-child(even){background:#fafafa}
+
+/* Planos */
+.planos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.plan{background:#fff;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,.05);padding:32px;position:relative}
+.plan h3{font-size:1.25rem;margin-bottom:8px}
+.price{font-size:2rem;font-weight:700;margin:16px 0;color:var(--secondary)}
+.plan ul{list-style:disc inside;margin-bottom:24px}
+.badge{position:absolute;top:-12px;right:16px;background:var(--secondary);padding:6px 12px;border-radius:var(--radius);font-size:.75rem;font-weight:700;color:#fff}
+
+/* CTA */
+#cta{background:var(--primary);color:#fff;text-align:center}
+#cta h2{color:#fff}
+#cta p{margin-bottom:32px}
+/* Botão no CTA – fundo branco, texto na cor de destaque */
+#cta .btn-primary{background:#fff;color:var(--primary)}
+#cta .btn-primary:hover{background:#f0f0f0;color:var(--highlight)}
+
+/* Footer */
+footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.875rem}
+
+/* Mobile menu simplificado */
+@media(max-width:640px){nav ul{display:none}}
+</style>
+
+</head>
+
+<body>
+
+<!-- =====  HEADER  ===== -->
+<header>
+  <nav>
+    <a href="#"><strong>PH Machado</strong> Vídeo Pack</a>
+    <ul>
+      <li><a href="#vantagens">Vantagens</a></li>
+      <li><a href="#escopo">Escopo</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#cta">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- =====  HERO  ===== -->
+<section id="hero">
+  <div class="text">
+    <h1>Assinatura de vídeos <br> sob medida para a sua empresa</h1>
+    <p>Receba conteúdos profissionais de forma recorrente, previsível e sem dor de cabeça – do roteiro à entrega.</p>
+    <a href="#cta" class="btn btn-primary">Quero conversar</a>
+  </div>
+  <div class="illustration" aria-hidden="true"></div>
+</section>
+
+<!-- =====  VANTAGENS  ===== -->
+<section id="vantagens">
+  <h2>Por que fechar um <em>Vídeo Pack</em> conosco?</h2>
+  <div class="grid-4">
+    <div class="card"><h3>Consultoria Audiovisual</h3><p>Reuniões de criação para alinhar objetivos, temas e storytelling.</p></div>
+    <div class="card"><h3>Previsibilidade de Custos</h3><p>Mesma mensalidade durante todo o contrato, sem surpresas.</p></div>
+    <div class="card"><h3>Time Completo</h3><p>Serviços de produtor, roteirista, câmera, edição, motion e sound design incluídos.</p></div>
+    <div class="card"><h3>Agilidade &amp; Escala</h3><p>Até 20 vídeos/mês prontos para publicar em múltiplos formatos.</p></div>
+  </div>
+</section>
+
+<!-- =====  ESCOPO  ===== -->
+<section id="escopo">
+  <h2>O que está incluído (e o que pode ser contratado à parte)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Faz Parte</th><th>Não Faz Parte*</th></tr></thead>
+      <tbody>
+        <tr><td>Reunião mensal de criação</td><td>Captação de imagens (veja “Planos de Captação”)</td></tr>
+        <tr><td>Roteirização dos vídeos</td><td>Animação gráfica em 3D</td></tr>
+        <tr><td>Animação gráfica em 2D</td><td>Ilustração original / personagens</td></tr>
+        <tr><td>Vetores, fotos e vídeos (Envato)</td><td>Locução, casting, estúdio</td></tr>
+        <tr><td>Trilha e efeitos (Envato/Artlist)</td><td>Trilha sonora original</td></tr>
+        <tr><td>2 rodadas de ajustes para roteiros*</td><td></td></tr>
+        <tr><td>2 rodadas de ajustes para vídeos*</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:.85rem;margin-top:8px">*Serviços adicionais podem ser orçados separadamente.</p>
+</section>
+
+<!-- =====  PLANOS  ===== -->
+<section id="planos">
+  <h2>Níveis de Captação</h2>
+  <div class="planos">
+
+    <div class="plan">
+      <h3>Básico</h3>
+      <div class="price">R$ 800/mês</div>
+      <ul>
+        <li>1 operador de câmera (Sony)</li>
+        <li>Tripé e/ou estabilizador</li>
+        <li><strong>Sem</strong> iluminação &amp; áudio dedicado</li>
+        <li>Até 8 vídeos/mês</li>
+      </ul>
+      <a href="#cta" class="btn btn-primary">Quero o Básico</a>
+    </div>
+
+    <div class="plan">
+      <span class="badge">mais vendido</span>
+      <h3>Intermediário</h3>
+      <div class="price">R$ 1.200/mês</div>
+      <ul>
+        <li>1 operador + 1 assistente</li>
+        <li>Com iluminação &amp; captação de áudio</li>
+        <li>Tripé/estabilizador</li>
+        <li>Até 12 vídeos/mês</li>
+      </ul>
+      <a href="#cta" class="btn btn-primary">Quero o Intermediário</a>
+    </div>
+
+    <div class="plan">
+      <h3>Avançado</h3>
+      <div class="price">R$ 1.500/mês</div>
+      <ul>
+        <li>1 operador de câmera + 1 assistente</li>
+        <li>Com iluminação &amp; áudio dedicado</li>
+        <li>Teleprompter (quando necessário)</li>
+        <li>Até 20 vídeos/mês</li>
+      </ul>
+      <a href="#cta" class="btn btn-primary">Quero o Avançado</a>
+    </div>
+
+  </div>
+
+  <p style="margin-top:32px;font-size:.9rem">⬆️ Adicione diárias de drone por apenas <strong>R$ 400,00</strong> cada.<br>
+  Fidelidade mínima: 3 meses (10 % off em plano anual).</p>
+</section>
+
+<!-- =====  CTA  ===== -->
+<section id="cta">
+  <h2>Pronto para turbinar seu marketing em vídeo?</h2>
+  <p>Chame no WhatsApp e vamos mostrar ao mundo o que a sua empresa tem de melhor!</p>
+  <a href="https://wa.me/5532984611049" class="btn btn-primary" style="background:#fff;color:var(--primary)">Falar no WhatsApp</a>
+</section>
+
+<!-- =====  FOOTER  ===== -->
+<footer>
+  © 2025 PH Machado Mídia – Todos os direitos reservados
+</footer>
+
+<!-- =====  JS: Rolagem suave para âncoras ===== -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(el=>{
+  el.addEventListener('click',e=>{
+    const href=e.currentTarget.getAttribute('href');
+    const target=document.querySelector(href);
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}
+  });
+});
+</script>
+
+</body>
+</html>
