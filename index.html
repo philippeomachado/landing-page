@@ -76,6 +76,43 @@ footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.8
 
 /* Mobile menu simplificado */
 @media(max-width:640px){nav ul{display:none}}
+  /* =====  Logo Carousel  ===== */
+#clientes{padding:64px 24px;text-align:center}
+#clientes h2{margin-bottom:32px}
+
+.logo-track{
+  overflow:hidden;               /* esconde o que sai da área */
+  width:100%;
+}
+
+.logo-slide{
+  display:flex;
+  gap:64px;                      /* espaçamento entre logos */
+  animation: scroll 20s linear infinite;
+}
+
+.logo-slide img{
+  height:70px;                   /* ajuste conforme necessário */
+  width:auto;
+  filter:grayscale(100%);        /* visual clean */
+  opacity:.8;
+  transition:.3s;
+}
+.logo-slide img:hover{
+  filter:none;
+  opacity:1;
+}
+
+@keyframes scroll{
+  0%   {transform:translateX(0)}
+  100% {transform:translateX(-100%)}
+}
+
+/* responsivo – encurta animação p/ telas pequenas */
+@media(max-width:640px){
+  .logo-slide{gap:32px;animation-duration:15s}
+}
+
 </style>
 
 </head>
@@ -182,6 +219,29 @@ footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.8
 
   <p style="margin-top:32px;font-size:.9rem">⬆️ Adicione diárias de drone por apenas <strong>R$ 400,00</strong> cada.<br>
   Fidelidade mínima: 3 meses (10% off em plano anual).</p>
+</section>
+<!-- =====  CLIENTES  ===== -->
+<section id="clientes">
+  <h2>Algumas marcas que já confiam no nosso trabalho</h2>
+
+  <div class="logo-track">
+    <!-- DUPLIQUE O LOTE DE IMAGENS PARA LOOP INFINITO -->
+    <div class="logo-slide">
+      <img src="images/logo1.png" alt="Cliente 1">
+      <img src="images/logo2.png" alt="Cliente 2">
+      <img src="images/logo3.png" alt="Cliente 3">
+      <img src="images/logo4.png" alt="Cliente 4">
+      <img src="images/logo5.png" alt="Cliente 5">
+    </div>
+    <div class="logo-slide">
+      <!-- mesmo conjunto de logos para efeito contínuo -->
+      <img src="images/logo1.png" alt="">
+      <img src="images/logo2.png" alt="">
+      <img src="images/logo3.png" alt="">
+      <img src="images/logo4.png" alt="">
+      <img src="images/logo5.png" alt="">
+    </div>
+  </div>
 </section>
 
 <!-- =====  CTA  ===== -->
