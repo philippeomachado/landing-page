@@ -136,6 +136,58 @@ footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.8
 @media(max-width:640px){
   .logo-slide{gap:32px;animation-duration:15s}
 }
+/* =====  Depoimentos  ===== */
+#testemunhos{padding:64px 24px;text-align:center}
+#testemunhos h2{margin-bottom:32px}
+
+.testi-grid{
+  max-width:1000px;
+  margin:auto;
+  display:grid;
+  gap:32px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.testimonial{
+  background:#fff;
+  padding:24px 28px;
+  border-radius:var(--radius);
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+  position:relative;
+}
+
+.testimonial blockquote{
+  font-size:1rem;
+  line-height:1.55;
+  color:var(--text);
+  margin-bottom:18px;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after{
+  content:"“";
+  font-size:3rem;
+  line-height:0;
+  color:var(--highlight);      /* laranja-vermelho */
+  position:absolute;
+}
+
+.testimonial blockquote::after{
+  content:"”";
+  right:18px;
+  bottom:16px;
+}
+
+.testimonial figcaption{
+  font-weight:600;
+  color:var(--primary);
+  font-size:.95rem;
+}
+
+/* responsivo: afasta aspas em telas menores */
+@media(max-width:480px){
+  .testimonial blockquote::after{right:12px}
+}
 
 </style>
 
@@ -244,6 +296,47 @@ footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.8
   <p style="margin-top:32px;font-size:.9rem">⬆️ Adicione diárias de drone por apenas <strong>R$ 400,00</strong> cada.<br>
   Fidelidade mínima: 3 meses (10% off em plano anual).</p>
 </section>
+
+<!-- =====  DEPOIMENTOS  ===== -->
+<section id="testemunhos">
+  <h2>O que os clientes dizem</h2>
+
+  <div class="testi-grid">
+
+    <figure class="testimonial">
+      <blockquote>
+        Pessoa e profissional excepcional; trabalhar com alguém assim facilita ter o resultado esperado. 
+        Escuta e entende o que o cliente precisa. <strong>Super indico, o cara é muito bom!</strong>
+      </blockquote>
+      <figcaption>— Fabiano Alvares</figcaption>
+    </figure>
+
+    <figure class="testimonial">
+      <blockquote>
+        Recomendo fortemente os serviços do PH! Super profissional, atento às necessidades do cliente, aliando conhecimento, 
+        tecnologia e empatia. Só tenho a agradecer pelas conquistas advindas do seu trabalho.
+      </blockquote>
+      <figcaption>— Fabiana Lopes da Cunha</figcaption>
+    </figure>
+
+    <figure class="testimonial">
+      <blockquote>
+        Excelente profissional. Contratei o PH para um vídeo institucional; fiquei tão satisfeito que hoje todas as artes das minhas redes sociais
+        são elaboradas pela agência dele. <strong>Recomendo!</strong>
+      </blockquote>
+      <figcaption>— Antônio Fernandes</figcaption>
+    </figure>
+
+    <figure class="testimonial">
+      <blockquote>
+        Ótima qualidade no atendimento e na confecção do serviço. <strong>Recomendo.</strong>
+      </blockquote>
+      <figcaption>— Recursos de Multas em 10 Min</figcaption>
+    </figure>
+
+  </div>
+</section>
+  
   <section id="faq">
   <h2>Perguntas frequentes</h2>
 
