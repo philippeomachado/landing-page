@@ -70,7 +70,29 @@ tbody tr:nth-child(even){background:#fafafa}
 /* Botão no CTA – fundo branco, texto na cor de destaque */
 #cta .btn-primary{background:#fff;color:var(--primary)}
 #cta .btn-primary:hover{background:#f0f0f0;color:var(--highlight)}
-
+<style>
+/* FAQ */
+#faq{padding:64px 24px;text-align:center}
+#faq h2{margin-bottom:32px}
+.faq-list{max-width:800px;margin:auto;text-align:left}
+.faq-list details{
+  border:1px solid #e0e0e0;
+  border-radius:var(--radius);
+  padding:16px;
+  margin-bottom:16px;
+  background:#fff;
+  transition:.2s;
+}
+.faq-list summary{
+  cursor:pointer;
+  font-weight:600;
+  color:var(--primary);
+}
+.faq-list summary::marker{color:var(--highlight);}  /* cor da setinha */
+.faq-list details[open]{border-color:var(--primary-light)}
+.faq-list p{margin-top:12px;line-height:1.5}
+</style>
+  
 /* Footer */
 footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.875rem}
 
@@ -221,6 +243,51 @@ footer{background:#01635e;color:#fff;padding:24px;text-align:center;font-size:.8
 
   <p style="margin-top:32px;font-size:.9rem">⬆️ Adicione diárias de drone por apenas <strong>R$ 400,00</strong> cada.<br>
   Fidelidade mínima: 3 meses (10% off em plano anual).</p>
+</section>
+  <section id="faq">
+  <h2>Perguntas frequentes</h2>
+
+  <div class="faq-list">
+    <details>
+      <summary>Quantos vídeos eu recebo por mês?</summary>
+      <p>Depende do plano: 8 no Básico, 12 no Intermediário e até 20 no Avançado.</p>
+    </details>
+
+    <details>
+      <summary>Qual é a duração máxima de cada vídeo?</summary>
+      <p>Até 60&nbsp;s no Básico, 2&nbsp;min no Intermediário e 3&nbsp;min no Avançado (negociável conforme necessidade).</p>
+    </details>
+
+    <details>
+      <summary>O que está incluído na assinatura e o que é extra?</summary>
+      <p>Roteiro, gravação, edição, motion&nbsp;2D e trilha estão incluídos. Animação de personagem, locução profissional, estúdio ou diárias de drone podem ser contratados à parte.</p>
+    </details>
+
+    <details>
+      <summary>Quantas revisões posso pedir?</summary>
+      <p>Duas rodadas criativas por vídeo. Correções técnicas (erro de cortes, áudio, legendas) são ilimitadas.</p>
+    </details>
+
+    <details>
+      <summary>Qual é o prazo de entrega após a gravação?</summary>
+      <p>Versão preliminar em até 5 dias úteis; entrega final em até 2 dias após aprovação.</p>
+    </details>
+
+    <details>
+      <summary>Há fidelidade mínima? Posso cancelar antes?</summary>
+      <p>Sim, fidelidade de 3&nbsp;meses. Cancelamentos antes desse período têm multa de 50 % das mensalidades restantes.</p>
+    </details>
+
+    <details>
+      <summary>Vocês atendem fora de Juiz de Fora?</summary>
+      <p>Sim. Despesas de deslocamento (km, pedágios, hospedagem) são orçadas e aprovadas previamente.</p>
+    </details>
+
+    <details>
+      <summary>Eu tenho direitos ilimitados sobre os vídeos?</summary>
+      <p>Sim – licença perpétua para usar em redes, site e anúncios. Apenas trilhas/licenças especiais podem requerer renovação; avisamos se for o caso.</p>
+    </details>
+  </div>
 </section>
 <!-- =====  CLIENTES  ===== -->
 <section id="clientes">
